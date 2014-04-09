@@ -32,18 +32,35 @@
                 width: 90%;
                 border:solid 1px #0000ff;
             }
+        
+            /* make cloumn */
+            @media (min-width: 40rem) {
+                .column {
+                    float: left;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    border:double 10px #0000ff;
+                }
+                
+                .column.full { width: 100%; }
+                .column.two-thirds { width: 66.7%; }
+                .column.half { width: 50%; }
+                .column.half { width: 50%; }
+                .column.thrid { width: 33.3%; }
+                .column.fourth { width: 25%; }
+                .column.flow-opposite { float: right; }
+            }
         </style>
     </head>
     <body>
         <div class="container">
-            <div class="column">
-                <p>からむ〜ちょ１</p>
-            </div>
-            <div class="column">
-                <p>からむ〜ちょ２</p>
-            </div>
-            <div class="column">
-                <p>からむ〜ちょ３</p>
+            <div class="row clearfix">
+                <div class="column half">
+                    <p>からむ〜ちょ１</p>
+                </div>
+                <div class="column half">
+                    <p>からむ〜ちょ２</p>
+                </div>
             </div>
         </div>
     </body>
