@@ -49,16 +49,38 @@
                 .column.fourth { width: 25%; }
                 .column.flow-opposite { float: right; }
             }
+        
+        .clearfix:before,
+        .clearfix:after {
+            content: " ";
+            display: table;
+        }
+        
+        .clearfix:after {
+            clear: both;
+        }
+        
+        .clearfix {
+            *zoom: 1;
+        }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="row clearfix">
                 <div class="column half">
-                    <p>からむ〜ちょ１</p>
+                    からむ〜ちょ１
                 </div>
                 <div class="column half">
-                    <p>からむ〜ちょ２</p>
+                    からむ〜ちょ２
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="column half">
+                    あああ
+                </div>
+                <div class="column half">
+                    いいいい
                 </div>
             </div>
         </div>
